@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
-	<title>Personality Quiz Starter Code</title>
+	<title>Foodie Personality Quiz</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- google font api -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mochiy+Pop+P+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  
 	<!-- import the webpage's stylesheet -->
 	<link rel="stylesheet" href="/style.css">
 
@@ -17,68 +21,131 @@
 </head>
 
 <body>
-
+  <main>
 	<header>
-		<h1>Name of Your Quiz!</h1>
-		<p>Add any instructions here.</p>
+		<h1>Foodie Personality Quiz!</h1>
+		<p id="instructions">What flavor does your personality best resemble? Answer the questions below by selecting the option that most accurately aligns with you to find out!</p>
 	</header>
-
-	<main>
-
-		<h2>What is your first question?</h2>
+    <hr>
+		<h2>Your ideal cozy night-in snack:</h2>
 		<div class="question">
 
 			<div class="answer-choice">
-				<img src="assets/cat.jpg" alt="A striped black and white cat sitting upright with folded arms">
+				<img src="assets/poultry_leg.png" alt="A roasted chicken leg emoji">
         <br>
-        <button id="q1a1">Question 1 Answer 1</button>
+        <button id="q1a1">Spicy nachos, sriracha wings, and hot sauce drizzles</button>
       </div>
 
       <div class="answer-choice">
-        <img src="assets/cat.jpg" alt="A striped black and white cat sitting upright with folded arms">
+        <img src="assets/chocolate_bar.png" alt="A sweet chocolate bar emoji">
         <br>
-        <button id="q1a2">Question 1 Answer 2</button>
+        <button id="q1a2">Cupcakes, chocolate truffles, and a sweet bowl of icecream</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/sandwich.png" alt="A layered sandwich emoji">
+        <br>
+        <button id="q1a3">A well-layered sandwich with classic salted potato chips</button>
       </div>
 
     </div> 
-    
-    <h2>What is your second question?</h2>
+    <hr>
+    <h2>When trying new foods, you're most likely to:</h2>
     <div class="question">
 
       <div class="answer-choice">
-        <img src="assets/cat.jpg" alt="A striped black and white cat sitting upright with folded arms">
+        <img src="assets/white_check_mark.png" alt="A white check mark emoji over a green background">
         <br>
-        <button id="q2a1">Question 2 Answer 1</button>
+        <button id="q2a1">Sample a tried-and-true local classic dish</button>
       </div>
 
       <div class="answer-choice">
-        <img src="assets/cat.jpg" alt="A striped black and white cat sitting upright with folded arms">
+        <img src="assets/revolving_hearts.png" alt="A set of revolving hearts emoji">
         <br>
-        <button id="q2a2">Question 2 Answer 2</button>
+        <button id="q2a2">Stick to a favorite dessert you know and love</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/fire.png" alt="A bold fire emoji">
+        <br>
+        <button id="q2a3">Seek out the hottest, most daring flavors you've never tried</button>
       </div>
 
     </div> 
-    
-    <h2>What is your third question?</h2>
+    <hr>
+    <h2>At group gatherings, you are:</h2>
     <div class="question">
 
       <div class="answer-choice">
-        <img src="assets/cat.jpg" alt="A striped black and white cat sitting upright with folded arms">
+        <img src="assets/tada.png" alt="A golden confetti popper emoji">
         <br>
-        <button id="q3a1">Question 3 Answer 1</button>
+        <button id="q3a1">The life of the party, spicing things up with games or dares</button>
       </div>
 
       <div class="answer-choice">
-        <img src="assets/cat.jpg" alt="A striped black and white cat sitting upright with folded arms">
+        <img src="assets/cake.png" alt="A sweet strawberry shortcake emoji">
         <br>
-        <button id="q3a2">Question 3 Answer 2</button>
+        <button id="q3a2">The cheery host offering homemade sweets</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/spiral_calendar_pad.png" alt="A calendar emoji">
+        <br>
+        <button id="q3a3">The organizer handling the schedule and food layout</button>
       </div>
 
     </div> 
-    
-    <h2 id="result">Your result is...</h2>
-    
-    
+    <hr>
+    <h2>Your ideal vacation vibe:</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/coffee.png" alt="A warm mug of coffee emoji">
+        <br>
+        <button id="q4a1">A cozy cafe in a small town, sipping sweet drinks and relaxing</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/train.png" alt="A train emoji">
+        <br>
+        <button id="q4a2">A well-planned foodie tour exploring the local savory specialties</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/snow_capped_mountain.png" alt="A snow-capped mountain emoji">
+        <br>
+        <button id="q4a3">A street-food adventure in a foodie capital, sampling new treats</button>
+      </div>
+
+    </div>
+    <hr>
+    <h2>I approach a new recipe by:</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/boom.png" alt="A bold explosion emoji">
+        <br>
+        <button id="q5a1">Improvising, adding unexpected ingredients for a bold twist</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/dizzy.png" alt="A spiraling star emoji">
+        <br>
+        <button id="q5a2">Tweaking it to suit my taste, adding a personal touch</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/spiral_note_pad.png" alt="A notepad emoji">
+        <br>
+        <button id="q5a3">Following the recipe exactly, savoring the process step by step</button>
+      </div>
+
+    </div>
+    <hr>
+    <h2>You're a...</h2>
+    <h1 id="result"></h1>
+    <h3 id="resultInfo"></h3>
+    <button id="restart">Restart</button>
   </main>
   </body>
 </html>
